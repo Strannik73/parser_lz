@@ -87,9 +87,7 @@ for i in range (1, 20):
             df.loc[len(df.index)] = [title, reit, url_tovar, datetime.now().date(), datetime.now().time()] 
 
     print('идет обработка')
-
     df.to_csv('ob.csv', index = True, index_label='№')
-
     print('объявления : ' ,len(boats) ) # колво объяв
 
 driver.quit()
